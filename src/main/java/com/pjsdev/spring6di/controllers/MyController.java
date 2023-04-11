@@ -18,4 +18,12 @@ public class MyController {
 
         return greetingService.sayGreeting();
     }
+
+    public void beforeInit() {
+        System.out.println("==> beforeInit() - called by bean post processor");
+    }
+
+    public void afterInit() {
+        System.out.println("==> afterInit() - called by bean post processor");
+    }
 }
